@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>calci</title>
+  </head>
+  <body>
+    <h1>Bug Calculator</h1>
+      <div id="container">
+        <div id="storeResult"></div>
+        <div id="result">0</div>
+        <div id="firstRow">
+          <input type="button" value="CE" class="btn" onclick="clearAll()">
+          <input type="button"  value="%" class="btn" onclick="percentage()">
+          <input type="button"  value="/" class="btn" onclick="division()">
+          <input type="button"  value="del" class="btn" id="redBtn" onclick="del()">
+        </div>
+        <div id="secondRow">
+          <input type="button" value="7" class="btn" onclick="addNum(7)">
+          <input type="button" value="8" class="btn" onclick="addNum(8)">
+          <input type="button" value="9" class="btn" onclick="addNum(9)">
+          <input type="button" value="-" class="btn" onclick="subtration()">
+        </div>
+        <div id="thirdRow">
+          <input type="button" value="4" class="btn" onclick="addNum(4)">
+          <input type="button" value="5" class="btn" onclick="addNum(5)">
+          <input type="button" value="6" class="btn" onclick="addNum(6)">
+          <input type="button" value="x" class="btn" onclick="multiplication()">
+        </div>
+        <div id="fourthRow">
+          <input type="button" value="1" class="btn" onclick="addNum(1)">
+          <input type="button" value="2" class="btn" onclick="addNum(2)">
+          <input type="button" value="3" class="btn" onclick="addNum(3)">
+          <input type="button" value="+" class="btn" onclick="addition()">
+      </div>
+      <div id="fifthRow">
+        <input type="button" value="00" class="btn" onclick="doubleZero()">
+        <input type="button" value="0" class="btn" onclick="addNum(0)">
+        <input type="button" value="." class="btn" onclick=" dot()">
+        <input type="button" value="=" class="btn" id="blueBtn" onclick="ans()" >
+      </div>
+    </div>
+    <script src="indes.js"></script>
+  </body>
+</html>
